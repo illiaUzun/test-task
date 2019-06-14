@@ -3,7 +3,6 @@ package Task2;
 import org.junit.jupiter.api.Test;
 
 import java.util.EmptyStackException;
-import java.util.NoSuchElementException;
 
 import static org.junit.jupiter.api.Assertions.*;
 

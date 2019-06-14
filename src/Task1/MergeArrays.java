@@ -11,7 +11,7 @@ public class MergeArrays {
     }
 
     /**
-     * More complex (C style) merge method without use of
+     * More complex (C style) mergeWithSort method without use of
      * additional utils
      * + more effective (performes faster)
      * <p>
@@ -28,7 +28,7 @@ public class MergeArrays {
      * @param a2 second sorted array
      * @return merged and sorted array
      */
-    public static int[] mergeTwo(int[] a1, int[] a2) {
+    public static int[] merge(int[] a1, int[] a2) {
         int[] r = new int[a1.length + a2.length];
 
         // i - iterator for result array; j - for first sub-array; k - for second
@@ -53,7 +53,7 @@ public class MergeArrays {
     }
 
     /**
-     * OOP style merge method:
+     * OOP style mergeWithSort method:
      * + good readability
      * <p>
      * Algorithm:
@@ -65,7 +65,7 @@ public class MergeArrays {
      * @param a2 second sorted array
      * @return merged and sorted array
      */
-    public static int[] merge(int[] a1, int[] a2) {
+    public static int[] mergeWithSort(int[] a1, int[] a2) {
         long startTime = System.nanoTime();
 
         int[] r = (int[]) Array.newInstance(a1.getClass().getComponentType(), a1.length + a2.length);

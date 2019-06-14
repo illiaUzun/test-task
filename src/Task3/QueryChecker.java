@@ -2,6 +2,7 @@ package Task3;
 
 import com.google.common.collect.ImmutableMap;
 import org.apache.commons.lang.ArrayUtils;
+import org.springframework.stereotype.Service;
 
 import java.util.*;
 import java.util.stream.Collectors;
